@@ -5,11 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>YouTube</title>
     <link href="../css/style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
   </head>
   <body>
-    <div class="navbar"></div>
+    <div class="navbar">
+      <div class="navbar-left">
+        <button class="material-icons md-26 md-light nav-menu">menu</button>
+        <button class="nav-logo">
+          <img src="../assets/navbar/youtube-logo.png" alt="youtube logo" height="52px">
+        </button>
+      </div>
+      <div class="navbar-middle">
+        <input type="text" class="searchbar" placeholder="Search">
+        <button class="material-icons md-21 lighter-dark nav-search">search</button>
+        <button class="material-icons md-26 md-light nav-mic">keyboard_voice</button>
+      </div>
+      <div class="navbar-right">
+        <button class="sign-in-cont">
+          <span class="material-icons md-26 md-light acc-circle">account_circle</span><span class="sign-in-text">SIGN IN</span>
+        </button>
+        <button class="material-icons md-26 md-light nav-more">more_vert</button>
+        <button class="material-icons md-26 md-light nav-apps">apps</button>
+      </div>
+    </div>
     <div class="content">
       <div class="video"></div>
+      <div class="buy-option"></div>
       <div class="video-stats"></div>
       <div class="description"></div>
       <div class="comments"></div>
