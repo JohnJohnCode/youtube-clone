@@ -66,6 +66,16 @@ table {
 
 
 /* SITE CONTENT */
+body {
+    background-color: #111111;
+    font-family: 'Roboto', sans-serif;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* NAVBAR */
 .navbar {
     display: grid;
     top: 0;
@@ -199,9 +209,9 @@ table {
 .content {
     display: grid;
     margin: 85px auto 0 auto;
-    width: 85%;
+    width: 90%;
     height: fit-content;
-    grid-template-columns: 74.5% 2% 23.5%;
+    grid-template-columns: 74.75% 1.5% 23.75%;
     grid-template-rows: auto;
     grid-template-areas: 
         "video . video-sidebar"
@@ -210,12 +220,137 @@ table {
         "comments . video-sidebar";
 }
 
+/* VIDEO */
+
 .video {
-    background-color: blue;
+    background-color: transparent;
     grid-area: video;
-    height: 35rem;
+    height: fit-content;
     width: fit-content;
 }
+
+.video iframe {
+    -webkit-box-shadow: 0 0 3px -2px #000000; 
+            box-shadow: 0 0 3px -2px #000000;
+}
+
+.video-stats {
+    background-color: transparent;
+    border-bottom: solid 1px #232323;
+    display: grid;
+    grid-area: video-stats;
+    height: 95px;
+    width: fit-content;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "video-leftcont video-rightcont";
+}
+
+.video-leftcont {
+    display: grid;
+    text-align: left;
+    grid-area: video-leftcont;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+        "video-title"
+        "video-views";
+}
+
+.video-title {
+    grid-area: video-title;
+    margin-top: 23px;
+    color: #e3f4fc;
+    font-weight: 400;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.video-views {
+    grid-area: video-views;
+    margin-top: 12px;
+    color: #b4c5cc;
+    font-weight: 400;
+    font-size: 0.86rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.video-rightcont {
+    display: grid;
+    grid-area: video-rightcont;
+    text-align: right;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+        ". ."
+        ". video-right";
+}
+
+.video-right {
+    grid-area: video-right;
+    display: inline-flex;
+    flex-flow: nowrap row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.video-likecont {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 95% 5%;
+    grid-template-areas: 
+        "video-aboveborder"
+        "video-border";
+    margin-right: 8px;
+}
+
+.video-aboveborder { grid-area: video-aboveborder; }
+.video-border {
+    grid-area: video-border;
+    height: 2px;
+    background: rgb(156,82,169);
+    background: linear-gradient(90deg, rgba(156,82,169,1) 0%, rgba(156,82,169,1) 97%, rgba(96,96,96,1) 97%); 
+}
+
+.video-like,
+.video-dislike,
+.video-share,
+.video-save {
+    color: #ccccce;
+    font-weight: 600;
+    font-size: 0.86rem;
+    text-align: center;
+    display: inline-flex;
+    flex-flow: nowrap row;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+}
+
+.video-like,
+.video-dislike { margin: 10px 0; }
+
+.video-share,
+.video-save {  margin: 15px 5px; }
+
+.video-likeamount,
+.video-dislikeamount,
+.video-sharetext,
+.video-savetext { margin-left: 6px; }
+
+.video-more { 
+    margin-top: 9px;
+    background-color: transparent;
+    border: none; 
+    color: #ccccce; 
+}
+
+.video-like:hover,
+.video-dislike:hover,
+.video-share:hover,
+.video-save:hover,
+.video-more:hover { color: #ab47bc;}
 
 .video-sidebar {
     background-color: aqua;
@@ -232,16 +367,9 @@ table {
 }
 
 .description {
-    background-color: chocolate;
+    background-color: transparent;
     grid-area: description;
     height: 240px;
-    width: fit-content;
-}
-
-.video-stats {
-    background-color: darkgreen;
-    grid-area: video-stats;
-    height: 85px;
     width: fit-content;
 }
 
