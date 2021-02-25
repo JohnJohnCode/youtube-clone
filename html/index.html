@@ -11,18 +11,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
   </head>
   <body>
+    <!-- NAVBAR -->
     <div class="navbar">
+      <!-- MORE AND LOGO -->
       <div class="navbar-left">
         <button class="material-icons md-26 md-light nav-menu">menu</button>
         <button class="nav-logo">
           <img src="../assets/navbar/youtube-logo.png" alt="youtube logo" height="52px">
         </button>
       </div>
+      <!-- SEARCH BAR -->
       <div class="navbar-middle">
         <input type="text" class="searchbar" placeholder="Search">
         <button class="material-icons md-21 lighter-dark nav-search">search</button>
         <button class="material-icons md-26 md-light nav-mic">keyboard_voice</button>
       </div>
+      <!-- APPS, MORE AND SIGN IN -->
       <div class="navbar-right">
         <button class="sign-in-cont">
           <span class="material-icons md-26 md-light acc-circle">account_circle</span><span class="sign-in-text">SIGN IN</span>
@@ -31,13 +35,56 @@
         <button class="material-icons md-26 md-light nav-apps">apps</button>
       </div>
     </div>
+    <!-- SITE CONTENT / BODY -->
     <div class="content">
-      <div class="video"></div>
+      <!-- VIDEO IFRAME -->
+      <div class="video">
+        <iframe width="100%" height="720" src="https://www.youtube.com/embed/3GPZzbKHKRw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <!-- VIDEO STATS (TITLE, LIKES ETC.) -->
+      <div class="video-stats">
+        <!-- TITLE AND VIEWS -->
+        <div class="video-leftcont">
+          <span class="video-title">Ryan Gosling - A Real Human Being and a Real Hero (fan video)</span>
+          <span class="video-views">569,895 views • Mar 23, 2012</span>
+        </div>
+        <!-- LIKE, DISLIKE, SHARE, SAVE, MORE -->
+        <div class="video-rightcont">
+          <div class="video-right">
+            <div class="video-likecont">
+              <div class="video-aboveborder">
+                <button class="video-like"><span class="material-icons md-26">thumb_up</span><span class="video-likeamount">3.1K</span></button>
+                <button class="video-dislike"><span class="material-icons md-26">thumb_down</span><span class="video-dislikeamount">86</span></button>
+              </div>
+              <div class="video-border"></div>
+            </div>
+            <button class="video-share"><span class="material-icons md-26">shortcut</span><span class="video-sharetext">SHARE</span></button>
+            <button class="video-save"><span class="material-icons md-26">playlist_add</span><span class="video-savetext">SAVE</span></button>
+            <button class="video-more"><span class="material-icons md-26">more_horiz</span></button>
+          </div>
+        </div>
+      </div>
       <div class="buy-option"></div>
-      <div class="video-stats"></div>
       <div class="description"></div>
       <div class="comments"></div>
-      <div class="video-sidebar"></div>
+      <!-- VIDEO SIDEBAR -->
+      <div class="video-sidebar">
+        <div class="sidebar-ad">
+          <div class="ad-header">
+            <span class="header-title">Drive</span>
+            <button class="header-btn">BUY OR RENT</button>
+          </div>
+          <div class="ad-content">
+            <div class="content-poster">
+
+            </div>
+            <div class="content-data">
+              <p class="content-text">Released: 2015</p>
+              <p class="content-text">Running time: 1:40:12</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
