@@ -220,7 +220,12 @@ button:focus {
         "comments . video-sidebar";
 }
 
-/* VIDEO */
+/* -------------
+
+        VIDEO
+    
+   -------------        
+*/
 
 .video {
     background-color: transparent;
@@ -352,12 +357,94 @@ button:focus {
 .video-save:hover,
 .video-more:hover { color: #ab47bc;}
 
+/* ---------------
+
+    VIDEO SIDE BAR
+
+   --------------
+*/
+
 .video-sidebar {
-    background-color: aqua;
+    background-color: transparent;
     grid-area: video-sidebar;
     height: fit-content;
     width: fit-content;
 }
+
+.sidebar-ad {
+    display: grid;
+    height: 240px;
+    width: 100%;
+    background-color: transparent;
+    -webkit-box-shadow: inset 3px 3px 0px 0px #3b3b3b, inset -3px -3px 0px 0px #3b3b3b; 
+            box-shadow: inset 3px 3px 0px 0px #3b3b3b, inset -3px -3px 0px 0px #3b3b3b;
+    grid-template-columns: auto;
+    grid-template-rows: 25% 75%;
+    grid-template-areas: 
+        "ad-header"
+        "ad-content";
+}
+
+.ad-header {
+    grid-area: ad-header;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: nowrap row;
+    background-color: #181818;
+    -webkit-box-shadow: inset 1px 1px 0px 1px #292929, inset -1px 1px 0px 1px #292929; 
+            box-shadow: inset 1px 1px 0px 1px #292929, inset -1px 1px 0px 1px #292929;       
+}
+
+.header-title {
+    color: #e3f4fc;
+    font-weight: 600;
+    font-size: 1.05rem;
+    margin-left: 15px;
+}
+
+.header-btn {
+    background-color: #aa47bc;
+    height: 67%;
+    width: 130px;
+    margin-right: 15px;
+    color: rgb(219, 219, 219);
+    font-size: 0.94rem;
+    font-weight: bold;
+    letter-spacing: -1px;
+    border: none;
+    border-radius: 2%;
+}
+
+.ad-content {
+    grid-area: ad-content;
+    display: inline-flex;
+    flex-flow: nowrap row;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #232323;
+    height: 100%;
+    -webkit-box-shadow: inset -1px -1px 0px 1px #292929, inset 1px -1px 0px 1px #292929; 
+            box-shadow: inset -1px -1px 0px 1px #292929, inset 1px -1px 0px 1px #292929;
+}
+
+.content-poster {
+    margin-left: 16px;
+}
+
+.content-data {
+    color: rgb(219, 219, 219);
+    font-weight: 600;
+    font-size: 0.9rem;
+    height: 150px;
+    width: 100%;
+    padding: 5px 0 0 9px;
+}
+
+.content-text {
+    margin-bottom: 6px;
+}
+
 
 .comments {
     background-color: cadetblue;
