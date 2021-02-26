@@ -570,23 +570,106 @@ button:focus {
     font-size: 0.82rem;
 }
 
-.comments {
-    background-color: cadetblue;
-    grid-area: comments;
-    height: 80rem;
-    width: fit-content;
-}
+/* ----------------
+
+    DESCRIPTION
+
+   ----------------*/
 
 .description {
+    display: grid;
+    grid-template-columns: 5.2% 44.8% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+        "description-left description-middle description-right";
     background-color: transparent;
     grid-area: description;
-    height: 240px;
+    height: 180px;
     width: fit-content;
+    border-bottom: solid 1px #232323;
 }
 
-.buy-option {
-    background-color: blueviolet;
-    grid-area: buy-option;
-    height: 230px;
+.description-left {
+    grid-area: description-left;
+    padding-top: 12px;
+}
+
+.description-middle {
+    grid-area: description-middle;
+    position: relative;
+}
+
+.description-name {
+    display: inline-block;
+    color: #e3f4fc;
+    font-weight: bold;
+    font-size: 0.90rem;
+    margin: 24px 0 4px 0;
+}
+
+.description-subs {
+    color: #b4c5cc;
+    font-weight: bold;
+    font-size: 0.80rem;
+    margin-bottom: 24px;
+}
+
+.description-name:hover,
+.description-showmore:hover {
+    color: #ab47bc;
+}
+
+.description-text1 {
+    color: #b4c5cc;
+    font-weight: 500;
+    font-size: 0.90rem;
+    margin-bottom: 24px;
+}
+
+.description-text2 {
+    color: #b4c5cc;
+    font-weight: 500;
+    font-size: 0.90rem;
+    margin-bottom: 10px;
+}
+
+.description-showmore {
+    background-color: transparent;
+    color: #e3f4fc;
+    font-weight: bold;
+    font-size: 0.83rem;
+    border: none;
+    width: fit-content;
+    padding: 0;
+    letter-spacing: -1px;
+}
+
+.description-right {
+    text-align: right;
+    grid-area: description-right;
+}
+
+.description-subbtn {
+    background-color: #aa47bc;
+    border: solid 1px #9954a5;
+    border-radius: 4%;
+    text-align: center;
+    height: 39px;
+    padding: 0 16px;
+    color: #e3f4fc;
+    font-weight: bold;
+    font-size: 0.90rem;
+    letter-spacing: -1px;
+    margin-top: 18px;
+}
+
+.description-subbtn:hover {
+    background-color: #bb4dce;
+}
+
+.comments {
+    background-color: transparent;
+    grid-area: comments;
+    height: 80rem;
     width: fit-content;
 }
