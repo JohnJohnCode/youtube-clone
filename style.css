@@ -531,7 +531,7 @@ input:focus { outline: none; }
   right: 7%;
   text-align: center;
   font-size: 0.8rem;
-  font-weight: bolder;
+  font-weight: bold;
   padding: auto;
   border: none;
   border-radius: 10%;
@@ -560,7 +560,7 @@ input:focus { outline: none; }
 .nextvid-title {
   color: #e3f4fc;
   font-size: 0.9rem;
-  font-weight: bolder;
+  font-weight: bold;
   margin-bottom: 8px;
   margin-top: 2px;
 }
