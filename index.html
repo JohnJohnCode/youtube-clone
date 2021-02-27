@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>YouTube</title>
+    <link href="./style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <!-- MORE AND LOGO -->
+      <div class="navbar-left">
+        <button class="material-icons md-26 md-light nav-menu">menu</button>
+        <button class="nav-logo">
+          <img
+            src="../assets/navbar/youtube-logo.png"
+            alt="youtube logo"
+            height="52px"
+          />
+        </button>
+      </div>
+      <!-- SEARCH BAR -->
+      <div class="navbar-middle">
+        <input type="text" class="searchbar" placeholder="Search" />
+        <button class="material-icons md-21 lighter-dark nav-search">
+          search
+        </button>
+        <button class="material-icons md-26 md-light nav-mic">
+          keyboard_voice
+        </button>
+      </div>
+      <!-- APPS, MORE AND SIGN IN -->
+      <div class="navbar-right">
+        <button class="sign-in-cont">
+          <span class="material-icons md-26 md-light acc-circle"
+            >account_circle</span
+          ><span class="sign-in-text">SIGN IN</span>
+        </button>
+        <button class="material-icons md-26 md-light nav-more">
+          more_vert
+        </button>
+        <button class="material-icons md-26 md-light nav-apps">apps</button>
+      </div>
+    </div>
+    <!-- SITE CONTENT / BODY -->
+    <div class="content">
+      <!-- VIDEO IFRAME -->
+      <div class="video">
+        <iframe
+          width="100%"
+          height="720"
+          src="https://www.youtube.com/embed/3GPZzbKHKRw"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <!-- VIDEO STATS (TITLE, LIKES ETC.) -->
+      <div class="video-stats">
+        <!-- TITLE AND VIEWS -->
+        <div class="video-leftcont">
+          <span class="video-title"
+            >Ryan Gosling - A Real Human Being and a Real Hero (fan video)</span
+          >
+          <span class="video-views">569,895 views • Mar 23, 2012</span>
+        </div>
+        <!-- LIKE, DISLIKE, SHARE, SAVE, MORE -->
+        <div class="video-rightcont">
+          <div class="video-right">
+            <div class="video-likecont">
+              <div class="video-aboveborder">
+                <button class="video-like">
+                  <span class="material-icons md-26">thumb_up</span
+                  ><span class="video-likeamount">3.1K</span>
+                </button>
+                <button class="video-dislike">
+                  <span class="material-icons md-26">thumb_down</span
+                  ><span class="video-dislikeamount">86</span>
+                </button>
+              </div>
+              <div class="video-border"></div>
+            </div>
+            <button class="video-share">
+              <span class="material-icons md-26">shortcut</span
+              ><span class="video-sharetext">SHARE</span>
+            </button>
+            <button class="video-save">
+              <span class="material-icons md-26">playlist_add</span
+              ><span class="video-savetext">SAVE</span>
+            </button>
+            <button class="video-more">
+              <span class="material-icons md-26">more_horiz</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- VIDEO DESCRIPTION -->
+      <div class="description">
+        <div class="description-left">
+          <a href="https://www.youtube.com/channel/UC1303ht01Yz-i_Xdv5refEA"
+            ><img
+              src="../assets/description/avatar.png"
+              alt="channel avatar"
+              height="initial-scale"
+          /></a>
+        </div>
+        <div class="description-middle">
+          <a
+            href="https://www.youtube.com/channel/UC1303ht01Yz-i_Xdv5refEA"
+            class="description-name"
+            >MayasMoviebox</a
+          >
+          <p class="description-subs">522 subscribers</p>
+          <p class="description-text1">
+            The movieclips are from the following films:
+          </p>
+          <p class="description-text2">Drive</p>
+          <button class="description-showmore">SHOW MORE</button>
+        </div>
+        <div class="description-right">
+          <button class="description-subbtn">SUBSCRIBE</button>
+        </div>
+      </div>
+      <!-- COMMENTS -->
+      <div class="comments">
+        <!-- ADD A COMMENT -->
+        <div class="initialcomment">
+          <div class="initialcomment-header">
+            <span class="header-commentnum">232 comments</span>
+            <button class="header-sortby">
+              <span class="material-icons md-26 sortby-symbol">sort</span
+              ><span>SORT BY</span>
+            </button>
+          </div>
+          <div class="initialcomment-body">
+            <img
+              src="../assets/comments/initialcomment.png"
+              alt="profile picture"
+              height="initial-scale"
+              class="initialavatar"
+            />
+            <input
+              type="text"
+              placeholder="Add a public comment..."
+              class="initialcomment-input"
+            />
+          </div>
+        </div>
+        <!-- NORMAL COMMENTS -->
+        <div class="commentcont">
+          <div class="comment-left">
+            <a href="https://www.youtube.com/channel/UC4atZ1Ep-S70Ql9y5qe3dxw"
+              ><img
+                src="/assets/comments/comment1.png"
+                alt="profile picture"
+                height="initial-scale"
+            /></a>
+          </div>
+          <div class="comment-right">
+            <span class="comment-namecont"
+              ><a
+                href="https://www.youtube.com/channel/UC4atZ1Ep-S70Ql9y5qe3dxw"
+                class="comment-name"
+                >Derek Diercksmeier</a
+              >
+              8 years ago</span
+            >
+            <p class="comment-text">
+              Ryan Gosling Is Undoubtedly One Of The Best Living Actors. I
+              Consider "Drive" To Be The Single Greatest Film Ever Made.
+            </p>
+            <div class="comment-likes">
+              <button class="material-icons md-16 md-light comment-like">
+                thumb_up
+              </button>
+              <span class="comment-likesnum">57</span>
+              <button class="material-icons md-16 md-light comment-dislike">
+                thumb_down
+              </button>
+              <button class="comment-replybtn">REPLY</button>
+            </div>
+            <button class="comment-viewreplycont">
+              <span class="material-icons md-18 md-light viewreply-arrow"
+                >arrow_drop_down</span
+              ><span class="viewreply-text">View reply</span>
+            </button>
+          </div>
+        </div>
+        <div class="commentcont">
+          <div class="comment-left">
+            <a href="https://www.youtube.com/channel/UCj0tZO_PnMkby4TbkrC7Y9g"
+              ><img
+                src="/assets/comments/comment2.png"
+                alt="profile picture"
+                height="initial-scale"
+            /></a>
+          </div>
+          <div class="comment-right">
+            <span class="comment-namecont"
+              ><a
+                href="https://www.youtube.com/channel/UCj0tZO_PnMkby4TbkrC7Y9g"
+                class="comment-name"
+                >JP Fryar</a
+              >
+              2 years ago</span
+            >
+            <p class="comment-text">
+              Ryan Gosling has never been in a bad film. Never.
+            </p>
+            <div class="comment-likes">
+              <button class="material-icons md-16 md-light comment-like">
+                thumb_up
+              </button>
+              <span class="comment-likesnum">35</span>
+              <button class="material-icons md-16 md-light comment-dislike">
+                thumb_down
+              </button>
+              <button class="comment-replybtn">REPLY</button>
+            </div>
+            <button class="comment-viewreplycont">
+              <span class="material-icons md-18 md-light viewreply-arrow"
+                >arrow_drop_down</span
+              ><span class="viewreply-text">View 5 replies</span>
+            </button>
+          </div>
+        </div>
+        <div class="commentcont">
+          <div class="comment-left">
+            <a href="https://www.youtube.com/channel/UCwoDgcRH257eNOpyMJ8Snxw"
+              ><img
+                src="/assets/comments/comment3.png"
+                alt="profile picture"
+                height="initial-scale"
+            /></a>
+          </div>
+          <div class="comment-right">
+            <span class="comment-namecont"
+              ><a
+                href="https://www.youtube.com/channel/UCwoDgcRH257eNOpyMJ8Snxw"
+                class="comment-name"
+                >JadeC4</a
+              >
+              6 years ago</span
+            >
+            <p class="comment-text">
+              Ryan Gosling is absolutely gorgeous, I can't even
+            </p>
+            <div class="comment-likes">
+              <button class="material-icons md-16 md-light comment-like">
+                thumb_up
+              </button>
+              <span class="comment-likesnum">66</span>
+              <button class="material-icons md-16 md-light comment-dislike">
+                thumb_down
+              </button>
+              <button class="comment-replybtn">REPLY</button>
+            </div>
+            <button class="comment-viewreplycont">
+              <span class="material-icons md-18 md-light viewreply-arrow"
+                >arrow_drop_down</span
+              ><span class="viewreply-text">View 4 replies</span>
+            </button>
+          </div>
+        </div>
+        <div class="commentcont">
+          <div class="comment-left">
+            <a href="https://www.youtube.com/channel/UC8qu3tqG00YnWYfvF4ho_Ow"
+              ><img
+                src="/assets/comments/comment4.png"
+                alt="profile picture"
+                height="initial-scale"
+            /></a>
+          </div>
+          <div class="comment-right">
+            <span class="comment-namecont"
+              ><a
+                href="https://www.youtube.com/channel/UC8qu3tqG00YnWYfvF4ho_Ow"
+                class="comment-name"
+                >Pyrrhus Taurus</a
+              >
+              6 years ago</span
+            >
+            <p class="comment-text">Real Human Bean</p>
+            <div class="comment-likes">
+              <button class="material-icons md-16 md-light comment-like">
+                thumb_up
+              </button>
+              <span class="comment-likesnum">107</span>
+              <button class="material-icons md-16 md-light comment-dislike">
+                thumb_down
+              </button>
+              <button class="comment-replybtn">REPLY</button>
+            </div>
+            <button class="comment-viewreplycont">
+              <span class="material-icons md-18 md-light viewreply-arrow"
+                >arrow_drop_down</span
+              ><span class="viewreply-text">View 5 replies</span>
+            </button>
+          </div>
+        </div>
+        <div class="commentcont">
+          <div class="comment-left">
+            <a href="https://www.youtube.com/channel/UCf_KhZ1RsffZFniAVTAlwTA"
+              ><img
+                src="/assets/comments/comment5.png"
+                alt="profile picture"
+                height="initial-scale"
+            /></a>
+          </div>
+          <div class="comment-right">
+            <span class="comment-namecont"
+              ><a
+                href="https://www.youtube.com/channel/UCf_KhZ1RsffZFniAVTAlwTA"
+                class="comment-name"
+                >Ni Ca</a
+              >
+              4 years ago</span
+            >
+            <p class="comment-text">A real actor and a real legend</p>
+            <div class="comment-likes">
+              <button class="material-icons md-16 md-light comment-like">
+                thumb_up
+              </button>
+              <span class="comment-likesnum">55</span>
+              <button class="material-icons md-16 md-light comment-dislike">
+                thumb_down
+              </button>
+              <button class="comment-replybtn">REPLY</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- VIDEO SIDEBAR -->
+      <div class="video-sidebar">
+        <!-- SIDEBAR AD -->
+        <div class="sidebar-ad">
+          <div class="ad-header">
+            <span class="header-title">Drive</span>
+            <button class="header-btn">BUY OR RENT</button>
+          </div>
+          <div class="ad-content">
+            <div class="content-poster">
+              <img
+                src="../assets/video-sidebar/movieposter.jpeg"
+                alt="drive movie poster"
+                height="170px"
+              />
+            </div>
+            <div class="content-data">
+              <p class="content-text">Released: 2015</p>
+              <p class="content-text">Running time: 1:40:12</p>
+            </div>
+          </div>
+        </div>
+        <!-- SIDEBAR NEXTVIDS -->
+        <div class="sidebar-vids">
+          <a href="https://www.youtube.com/watch?v=XoHI6Zus2UI">
+            <div class="nextvid">
+              <div class="morebtn-cont">
+                <button class="material-icons md-21 md-light morebtn">
+                  more_vert
+                </button>
+              </div>
+              <div class="nextvid-left">
+                <div class="watchlaterbtn-cont">
+                  <button class="material-icons md-21 md-light watchlaterbtn">
+                    watch_later
+                  </button>
+                </div>
+                <div class="playbtn-cont">
+                  <button class="material-icons md-21 md-light playbtn">
+                    playlist_play
+                  </button>
+                </div>
+                <div class="timestamp-cont">
+                  <span class="timestamp">4:28</span>
+                </div>
+                <img
+                  src="../assets/video-sidebar/thumbnail_01.jpg"
+                  alt="video thumbnail"
+                  height="95px"
+                  width="169px"
+                />
+              </div>
+              <div class="nextvid-right">
+                <p class="nextvid-title">
+                  Electric Youth & College - A Real Hero (DRIVE)
+                </p>
+                <p class="nextvid-user">clarencito</p>
+                <p class="nextvid-stats">244K views • 3 years ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.youtube.com/watch?v=7tWL5xHVAGQ">
+            <div class="nextvid">
+              <div class="morebtn-cont">
+                <button class="material-icons md-21 md-light morebtn">
+                  more_vert
+                </button>
+              </div>
+              <div class="nextvid-left">
+                <div class="watchlaterbtn-cont">
+                  <button class="material-icons md-21 md-light watchlaterbtn">
+                    watch_later
+                  </button>
+                </div>
+                <div class="playbtn-cont">
+                  <button class="material-icons md-21 md-light playbtn">
+                    playlist_play
+                  </button>
+                </div>
+                <div class="timestamp-cont">
+                  <span class="timestamp">3:00:18</span>
+                </div>
+                <img
+                  src="../assets/video-sidebar/thumbnail_02.jpg"
+                  alt="video thumbnail"
+                  height="95px"
+                  width="169px"
+                />
+              </div>
+              <div class="nextvid-right">
+                <p class="nextvid-title">A Real Hero 3 Hours</p>
+                <p class="nextvid-user">Master Ian Gamer</p>
+                <p class="nextvid-stats">250K views • 6 years ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.youtube.com/watch?v=79YlMZlqZmc">
+            <div class="nextvid">
+              <div class="morebtn-cont">
+                <button class="material-icons md-21 md-light morebtn">
+                  more_vert
+                </button>
+              </div>
+              <div class="nextvid-left">
+                <div class="watchlaterbtn-cont">
+                  <button class="material-icons md-21 md-light watchlaterbtn">
+                    watch_later
+                  </button>
+                </div>
+                <div class="playbtn-cont">
+                  <button class="material-icons md-21 md-light playbtn">
+                    playlist_play
+                  </button>
+                </div>
+                <div class="timestamp-cont">
+                  <span class="timestamp">10:01</span>
+                </div>
+                <img
+                  src="../assets/video-sidebar/thumbnail_03.jpg"
+                  alt="video thumbnail"
+                  height="95px"
+                  width="169px"
+                />
+              </div>
+              <div class="nextvid-right">
+                <p class="nextvid-title">
+                  Ryan Gosling funniest moments (Updated 2020)
+                </p>
+                <p class="nextvid-user">FavCelebrities</p>
+                <p class="nextvid-stats">481K views • 6 months ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.youtube.com/watch?v=-8EWOK5uBoo">
+            <div class="nextvid">
+              <div class="morebtn-cont">
+                <button class="material-icons md-21 md-light morebtn">
+                  more_vert
+                </button>
+              </div>
+              <div class="nextvid-left">
+                <div class="watchlaterbtn-cont">
+                  <button class="material-icons md-21 md-light watchlaterbtn">
+                    watch_later
+                  </button>
+                </div>
+                <div class="playbtn-cont">
+                  <button class="material-icons md-21 md-light playbtn">
+                    playlist_play
+                  </button>
+                </div>
+                <div class="timestamp-cont">
+                  <span class="timestamp">4:05</span>
+                </div>
+                <img
+                  src="../assets/video-sidebar/thumbnail_04.jpg"
+                  alt="video thumbnail"
+                  height="95px"
+                  width="169px"
+                />
+              </div>
+              <div class="nextvid-right">
+                <p class="nextvid-title">Drive - In Fact It Was You</p>
+                <p class="nextvid-user">Slymansworld</p>
+                <p class="nextvid-stats">2.5M views • 9 years ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.youtube.com/watch?v=6cedWvuxwbc">
+            <div class="nextvid">
+              <div class="morebtn-cont">
+                <button class="material-icons md-21 md-light morebtn">
+                  more_vert
+                </button>
+              </div>
+              <div class="nextvid-left">
+                <div class="watchlaterbtn-cont">
+                  <button class="material-icons md-21 md-light watchlaterbtn">
+                    watch_later
+                  </button>
+                </div>
+                <div class="playbtn-cont">
+                  <button class="material-icons md-21 md-light playbtn">
+                    playlist_play
+                  </button>
+                </div>
+                <div class="timestamp-cont">
+                  <span class="timestamp">4:53</span>
+                </div>
+                <img
+                  src="../assets/video-sidebar/thumbnail_05.jpg"
+                  alt="video thumbnail"
+                  height="95px"
+                  width="169px"
+                />
+              </div>
+              <div class="nextvid-right">
+                <p class="nextvid-title">
+                  Electric Youth - "A Real Hero" (SC Live Session Pt. 1)
+                </p>
+                <p class="nextvid-user">
+                  Secretly Canadian
+                  <span class="material-icons md-14 purple">check_circle</span>
+                </p>
+                <p class="nextvid-stats">4.9M views • 6 years ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.youtube.com/watch?v=Ga3ccW-cRno">
+            <div class="nextvid">
+              <div class="morebtn-cont">
+                <button class="material-icons md-21 md-light morebtn">
+                  more_vert
+                </button>
+              </div>
+              <div class="nextvid-left">
+                <div class="watchlaterbtn-cont">
+                  <button class="material-icons md-21 md-light watchlaterbtn">
+                    watch_later
+                  </button>
+                </div>
+                <div class="playbtn-cont">
+                  <button class="material-icons md-21 md-light playbtn">
+                    playlist_play
+                  </button>
+                </div>
+                <div class="timestamp-cont">
+                  <span class="timestamp">5:16</span>
+                </div>
+                <img
+                  src="../assets/video-sidebar/thumbnail_06.jpg"
+                  alt="video thumbnail"
+                  height="95px"
+                  width="169px"
+                />
+              </div>
+              <div class="nextvid-right">
+                <p class="nextvid-title">Ryan Gosling Gushes About His Girls</p>
+                <p class="nextvid-user">
+                  TheEllenShow
+                  <span class="material-icons md-14 purple">check_circle</span>
+                </p>
+                <p class="nextvid-stats">9.4M views • 4 years ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.youtube.com/watch?v=tIGpNtjKKYs">
+            <div class="nextvid">
+              <div class="morebtn-cont">
+                <button class="material-icons md-21 md-light morebtn">
+                  more_vert
+                </button>
+              </div>
+              <div class="nextvid-left">
+                <div class="watchlaterbtn-cont">
+                  <button class="material-icons md-21 md-light watchlaterbtn">
+                    watch_later
+                  </button>
+                </div>
+                <div class="playbtn-cont">
+                  <button class="material-icons md-21 md-light playbtn">
+                    playlist_play
+                  </button>
+                </div>
+                <div class="timestamp-cont">
+                  <span class="timestamp">4:29</span>
+                </div>
+                <img
+                  src="../assets/video-sidebar/thumbnail_07.jpg"
+                  alt="video thumbnail"
+                  height="95px"
+                  width="169px"
+                />
+              </div>
+              <div class="nextvid-right">
+                <p class="nextvid-title">
+                  College ft. Electric Youth - A Real Hero [Music Video]
+                </p>
+                <p class="nextvid-user">Some Kind Of Classic</p>
+                <p class="nextvid-stats">28K views • 3 years ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.youtube.com/watch?v=Xo-gnIxEulo">
+            <div class="nextvid">
+              <div class="morebtn-cont">
+                <button class="material-icons md-21 md-light morebtn">
+                  more_vert
+                </button>
+              </div>
+              <div class="nextvid-left">
+                <div class="watchlaterbtn-cont">
+                  <button class="material-icons md-21 md-light watchlaterbtn">
+                    watch_later
+                  </button>
+                </div>
+                <div class="playbtn-cont">
+                  <button class="material-icons md-21 md-light playbtn">
+                    playlist_play
+                  </button>
+                </div>
+                <div class="timestamp-cont">
+                  <span class="timestamp">4:46</span>
+                </div>
+                <img
+                  src="../assets/video-sidebar/thumbnail_08.jpg"
+                  alt="video thumbnail"
+                  height="95px"
+                  width="169px"
+                />
+              </div>
+              <div class="nextvid-right">
+                <p class="nextvid-title">Drive - A Real Hero Music Video</p>
+                <p class="nextvid-user">NA22011</p>
+                <p class="nextvid-stats">468K views • 7 years ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.youtube.com/watch?v=vXyRJBuoPrQ">
+            <div class="nextvid">
+              <div class="morebtn-cont">
+                <button class="material-icons md-21 md-light morebtn">
+                  more_vert
+                </button>
+              </div>
+              <div class="nextvid-left">
+                <div class="watchlaterbtn-cont">
+                  <button class="material-icons md-21 md-light watchlaterbtn">
+                    watch_later
+                  </button>
+                </div>
+                <div class="playbtn-cont">
+                  <button class="material-icons md-21 md-light playbtn">
+                    playlist_play
+                  </button>
+                </div>
+                <div class="timestamp-cont">
+                  <span class="timestamp">4:27</span>
+                </div>
+                <img
+                  src="../assets/video-sidebar/thumbnail_09.jpg"
+                  alt="video thumbnail"
+                  height="95px"
+                  width="169px"
+                />
+              </div>
+              <div class="nextvid-right">
+                <p class="nextvid-title">
+                  College - A Real Hero (feat. Electric Youth) Drive 2011...
+                </p>
+                <p class="nextvid-user">Alexander Mazuraitis</p>
+                <p class="nextvid-stats">62K views • 9 years ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.youtube.com/watch?v=zhB0Bk41HUQ">
+            <div class="nextvid">
+              <div class="morebtn-cont">
+                <button class="material-icons md-21 md-light morebtn">
+                  more_vert
+                </button>
+              </div>
+              <div class="nextvid-left">
+                <div class="watchlaterbtn-cont">
+                  <button class="material-icons md-21 md-light watchlaterbtn">
+                    watch_later
+                  </button>
+                </div>
+                <div class="playbtn-cont">
+                  <button class="material-icons md-21 md-light playbtn">
+                    playlist_play
+                  </button>
+                </div>
+                <div class="timestamp-cont">
+                  <span class="timestamp">8:21</span>
+                </div>
+                <img
+                  src="../assets/video-sidebar/thumbnail_10.jpg"
+                  alt="video thumbnail"
+                  height="95px"
+                  width="169px"
+                />
+              </div>
+              <div class="nextvid-right">
+                <p class="nextvid-title">
+                  Ryan Gosling and Emma Stone Funny Moments PART 1
+                </p>
+                <p class="nextvid-user">Wonder Movies</p>
+                <p class="nextvid-stats">3.7M views • 3 years ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.youtube.com/watch?v=jpBpp3mK_JY">
+            <div class="nextvid">
+              <div class="morebtn-cont">
+                <button class="material-icons md-21 md-light morebtn">
+                  more_vert
+                </button>
+              </div>
+              <div class="nextvid-left">
+                <div class="watchlaterbtn-cont">
+                  <button class="material-icons md-21 md-light watchlaterbtn">
+                    watch_later
+                  </button>
+                </div>
+                <div class="playbtn-cont">
+                  <button class="material-icons md-21 md-light playbtn">
+                    playlist_play
+                  </button>
+                </div>
+                <div class="timestamp-cont">
+                  <span class="timestamp">1:24</span>
+                </div>
+                <img
+                  src="../assets/video-sidebar/thumbnail_11.jpg"
+                  alt="video thumbnail"
+                  height="95px"
+                  width="169px"
+                />
+              </div>
+              <div class="nextvid-right">
+                <p class="nextvid-title">
+                  Ryan Gosling Film Tribute || Blinding Lights
+                </p>
+                <p class="nextvid-user">xgyllenhaalic</p>
+                <p class="nextvid-stats">6K views • 1 year ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.youtube.com/watch?v=SbskIqUqQso">
+            <div class="nextvid">
+              <div class="morebtn-cont">
+                <button class="material-icons md-21 md-light morebtn">
+                  more_vert
+                </button>
+              </div>
+              <div class="nextvid-left">
+                <div class="watchlaterbtn-cont">
+                  <button class="material-icons md-21 md-light watchlaterbtn">
+                    watch_later
+                  </button>
+                </div>
+                <div class="playbtn-cont">
+                  <button class="material-icons md-21 md-light playbtn">
+                    playlist_play
+                  </button>
+                </div>
+                <div class="timestamp-cont">
+                  <span class="timestamp">3:54</span>
+                </div>
+                <img
+                  src="../assets/video-sidebar/thumbnail_12.jpg"
+                  alt="video thumbnail"
+                  height="95px"
+                  width="169px"
+                />
+              </div>
+              <div class="nextvid-right">
+                <p class="nextvid-title">Song to Song // Young and Beautiful</p>
+                <p class="nextvid-user">Ocean13st</p>
+                <p class="nextvid-stats">37K views • 3 years ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.youtube.com/watch?v=p_nn4Lu80kA">
+            <div class="nextvid">
+              <div class="morebtn-cont">
+                <button class="material-icons md-21 md-light morebtn">
+                  more_vert
+                </button>
+              </div>
+              <div class="nextvid-left">
+                <div class="watchlaterbtn-cont">
+                  <button class="material-icons md-21 md-light watchlaterbtn">
+                    watch_later
+                  </button>
+                </div>
+                <div class="playbtn-cont">
+                  <button class="material-icons md-21 md-light playbtn">
+                    playlist_play
+                  </button>
+                </div>
+                <div class="timestamp-cont">
+                  <span class="timestamp">5:37</span>
+                </div>
+                <img
+                  src="../assets/video-sidebar/thumbnail_13.jpg"
+                  alt="video thumbnail"
+                  height="95px"
+                  width="169px"
+                />
+              </div>
+              <div class="nextvid-right">
+                <p class="nextvid-title">
+                  Blade Runner 2049 - Real Human Being
+                </p>
+                <p class="nextvid-user">TianHP</p>
+                <p class="nextvid-stats">11K views • 1 year ago</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.youtube.com/watch?v=kOWM9ao38lM">
+            <div class="nextvid">
+              <div class="morebtn-cont">
+                <button class="material-icons md-21 md-light morebtn">
+                  more_vert
+                </button>
+              </div>
+              <div class="nextvid-left">
+                <div class="watchlaterbtn-cont">
+                  <button class="material-icons md-21 md-light watchlaterbtn">
+                    watch_later
+                  </button>
+                </div>
+                <div class="playbtn-cont">
+                  <button class="material-icons md-21 md-light playbtn">
+                    playlist_play
+                  </button>
+                </div>
+                <div class="timestamp-cont">
+                  <span class="timestamp">3:55</span>
+                </div>
+                <img
+                  src="../assets/video-sidebar/thumbnail_14.jpg"
+                  alt="video thumbnail"
+                  height="95px"
+                  width="169px"
+                />
+              </div>
+              <div class="nextvid-right">
+                <p class="nextvid-title">
+                  Electric Youth - Innocence (Official Video)
+                </p>
+                <p class="nextvid-user">ElectricYouthVEVO</p>
+                <p class="nextvid-stats">5.6M views • 6 years ago</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
