@@ -245,7 +245,6 @@ input:focus { outline: none; }
   background-color: transparent;
   grid-area: video;
   height: fit-content;
-  width: fit-content;
 }
 
 .video iframe {
@@ -259,7 +258,6 @@ input:focus { outline: none; }
   display: grid;
   grid-area: video-stats;
   height: 95px;
-  width: fit-content;
   grid-template-columns: 50% 50%;
   grid-template-rows: auto;
   grid-template-areas: "video-leftcont video-rightcont";
@@ -595,7 +593,6 @@ input:focus { outline: none; }
   background-color: transparent;
   grid-area: description;
   height: 180px;
-  width: fit-content;
   border-bottom: solid 1px #232323;
 }
 
@@ -684,8 +681,6 @@ input:focus { outline: none; }
 .comments {
   background-color: transparent;
   grid-area: comments;
-  height: 80rem;
-  width: fit-content;
   height: fit-content;
   height: -moz-fit-content;
 }
